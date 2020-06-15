@@ -1,0 +1,26 @@
+body {
+    background: #fefefe;
+}
+section {
+    background: #ffffff;
+}
+.main-heading {
+    color: darkred;
+}
+.special-heading {
+    color:#21A179;
+}
+.secondary-heading {
+    color: #1460AA;
+}
+p {
+    color:#1d1285;
+}
+
+
+a {
+    color: #f8be00;
+}
+nav a {
+    color: #079425;
+}
