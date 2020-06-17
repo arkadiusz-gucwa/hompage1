@@ -10,10 +10,10 @@
 
 <body>
     <header class="header">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="nauka-css.html">Nauka CSS</a>
+        <nav class="navigation">
+            <a  class="navigation__link" href="index.html">Strona główna</a>
+            <a  class="navigation__link navigation__link--homepage"  href="nauka-html.html">Nauka html</a>
+            <a  class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
     <main>
@@ -26,9 +26,9 @@
             <h2 class="secondary-heading"> Co to jest HTML.</h2>
             <img src="pobrane(1).jpg" alt="laptop">
             <h2 class="secondary-heading">Notatki z WTF: Co Ten Frontend.</h2>
-            <article>
-                <h3 class="special-heading">Tydzień II i III</h3>
-                <p>HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej,
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień II i III</h3>
+                <p class="week-summary__description">HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej,
                     nadając odpowiednie
                     znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki,
                     listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np.
@@ -40,7 +40,7 @@
             </article>
 
         </section>
-        <section>
+        <section class="week-summary">
             <h2 class="secondary-heading">Tekst poboczny</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam praesentium optio culpa fugit
                 quis, incidunt id iure amet odio labore! Aut eveniet, tempora architecto quasi at quisquam laborum

@@ -10,10 +10,10 @@
 
 <body>
     <header class="header">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="nauka-css.html">Nauka CSS</a>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
     <main>
@@ -36,17 +36,19 @@
         </section>
         <section id="notatki">
             <h2 class="secondary-heading">Notatki z WTF: Co Ten Frontend.</h2>
-            <article>
-                <h3 class="special-heading">Tydzień I.</h3>
-                <p>Sprawy organizacyjne, a mianowicie krótko o tym „o czym jest” frontend. Jakie
+            <article class="week-summary">
+                <h3 class="week-summary__title">Tydzień I.</h3>
+                <p class="week-summary__description">Sprawy organizacyjne, a mianowicie krótko o tym „o czym jest”
+                    frontend. Jakie
                     edytory tekstu będą nam
                     potrzebne do brania udziału w tym szkoleniu, a także przebieg ich instalacji. Zainstalowanie i
                     założenie
                     konta na Slack-u.</p>
             </article>
-            <article>
-                <h3  class="special-heading">Tydzień II.</h3>
-                <p>Krótko, zwięźle i w temacie WTF (co to jest): HTML oraz CSS. Struktury, tworzenie a
+            <article class="week-summary week-summary--special">
+                <h3 class="week-summary__title">Tydzień II.</h3>
+                <p class="week-summary__description">Krótko, zwięźle i w temacie WTF (co to jest): HTML oraz CSS.
+                    Struktury, tworzenie a
                     także ich schemat
                     i
                     zastosowanie. Opis warstw strony internetowej, zaczynając od treści poprzez HTML,CSS i kończąc na
@@ -58,7 +60,8 @@
 
     </main>
     <footer>
-        Strona domowa Arka Gucwy. Treści są efektem prowadzonego szkolenia w ramach WTF.<a href=#top>Przejdz do góry strony</a>
+        Strona domowa Arka Gucwy. Treści są efektem prowadzonego szkolenia w ramach WTF.<a href=#top>Przejdz do góry
+            strony</a>
     </footer>
     <script src="main.js"></script>
 
