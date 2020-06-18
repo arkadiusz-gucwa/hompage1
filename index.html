@@ -16,26 +16,28 @@
             <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         </nav>
     </header>
-    <main>
-        <header id="top">
-            <h1 class="main-heading"> Arek Gucwa – Strona domowa robiona w ramach WTF.</h1>
+    <main class="main">
+        <header class="main__header" id="top">
+            <h1 class="main__heading main__heading--js"> Arek Gucwa – Strona domowa robiona w ramach WTF.</h1>
         </header>
 
 
-        <section>
-            <h2 class="secondary-heading">O mnie.</h2>
-            <img class="laptop" src="pobrane.jpg" alt="laptop">
-            <p>Witam. Jestem początkującym w tej branży , mam za sobą jedynie jakiś krótki kurs z YT.
+        <section class="about">
+            <h2 class="about__heading">O mnie.</h2>
+            <img class="about__picture" src="pobrane.jpg" alt="laptop">
+            <p class="about__description">Witam. Jestem początkującym w tej branży , mam za sobą jedynie jakiś krótki
+                kurs z YT.
                 Mam również
                 nadzieję
                 na poszerzenie horyzontów w branży IT, a przynajmniej na zagłębienie się w jej tajniki. Czas pokaże..
                 Jak na
-                razie zabieramy się do roboty. Przydatne linki: <a href="https://cotenfrontend.pl/">WTF.</a> <a
-                    href=#notatki>Przejdź do notatek</a></p>
+                razie zabieramy się do roboty. Przydatne linki: <a class="about__link"
+                    href="https://cotenfrontend.pl/">WTF.</a> <a class="about__link" href=#notatki>Przejdź do
+                    notatek</a></p>
 
         </section>
-        <section id="notatki">
-            <h2 class="secondary-heading">Notatki z WTF: Co Ten Frontend.</h2>
+        <section class="notes" id="notatki">
+            <h2 class="notes__heading">Notatki z WTF: Co Ten Frontend.</h2>
             <article class="week-summary">
                 <h3 class="week-summary__title">Tydzień I.</h3>
                 <p class="week-summary__description">Sprawy organizacyjne, a mianowicie krótko o tym „o czym jest”
@@ -44,6 +46,7 @@
                     potrzebne do brania udziału w tym szkoleniu, a także przebieg ich instalacji. Zainstalowanie i
                     założenie
                     konta na Slack-u.</p>
+                    <p class="week-summary__description week-summary__description--js"></p>
             </article>
             <article class="week-summary week-summary--special">
                 <h3 class="week-summary__title">Tydzień II.</h3>
@@ -59,8 +62,9 @@
 
 
     </main>
-    <footer>
-        Strona domowa Arka Gucwy. Treści są efektem prowadzonego szkolenia w ramach WTF.<a href=#top>Przejdz do góry
+    <footer class="footer">
+        Strona domowa Arka Gucwy. Treści są efektem prowadzonego szkolenia w ramach WTF.<a class="footer__link"
+            href=#top>Przejdz do góry
             strony</a>
     </footer>
     <script src="main.js"></script>
