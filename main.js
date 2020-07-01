@@ -7,9 +7,7 @@ console.log(firstName);
 console.log(age);
 console.log(`Witaj Drogi odwiedzający, nazywam się ${firstName} i mam ${age} lat.`)
 
-const heading = document.querySelector('.main__heading--js');
 
-heading.innerHTML = `Witaj Drogi odwiedzający, nazywam się ${firstName} i mam ${age} lat.`
 
 
 
@@ -114,9 +112,20 @@ switch (myNumber) {
 if (32 > 20) {
     console.log('to prawda')
 } else {
-        console.log('to nie prawda')
-    }
+    console.log('to nie prawda')
+}
 
 
 const result = (humanOne.age > humanTwo.age) ? age : false
 console.log(result)
+
+const button = document.querySelector('.action--js');
+console.log(button)
+
+
+    
+button.addEventListener('click', () => {
+const heading = document.querySelector('.main__heading--js');
+
+    heading.innerHTML = `Witaj Drogi odwiedzający, nazywam się Arek.`;
+});
