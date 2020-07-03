@@ -126,6 +126,13 @@ console.log(button)
     
 button.addEventListener('click', () => {
 const heading = document.querySelector('.main__heading--js');
-
-    heading.innerHTML = `Witaj Drogi odwiedzający, nazywam się Arek.`;
+heading.innerHTML = `Witaj Drogi odwiedzający, nazywam się Arek.`;
+console.log(heading.classList.contains('main__heading--2'));
 });
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js')
+    nav.classList.toggle('navigation--open');
+})
