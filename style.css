@@ -49,6 +49,7 @@ nav a {
     padding: 16px;
     display: none;
 }
+
 .navigation--open {
     display: block;
 }
@@ -160,6 +161,7 @@ footer {
 .klasa-z-js {
     background: yellow;
 }
+
 .hamburger {
     position: absolute;
     top: 20px;
@@ -167,11 +169,16 @@ footer {
     border: none;
     background: none;
 }
+
 @media (min-width: 768px) {
     .hamburger {
         display: none;
     }
-    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+    }
     .main {
         max-width: 1000px;
         margin: 100px auto 0;
@@ -185,4 +192,3 @@ footer {
         align-items: center;
     }
 }
-   
