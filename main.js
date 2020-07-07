@@ -25,10 +25,11 @@ console.log(calculate(7))
 greet(31, 'Arek')
 
 
-function creatContent(querySelectorContent, content) {
+function createContent(querySelectorContent, content) {
     const element = document.querySelector(querySelectorContent)
-    element.innerHTML = content;
+    if (element) element.innerHTML = content;
 }
+
 
 function helloWorld() {
     console.log('witaj swiecie')
@@ -37,7 +38,7 @@ function helloWorld() {
 helloWorld();
 
 
-creatContent('.week-summary__description--js', 'Witaj Świecie!')
+createContent('.week-summary__description--js', 'Witaj Świecie!')
 
 const deathStar = {
     diameter: 120000,
@@ -124,7 +125,7 @@ console.log(button)
 
 
     
-button.addEventListener('click', () => {
+if (button)addEventListener('click', () => {
 const heading = document.querySelector('.main__heading--js');
 heading.innerHTML = `Witaj Drogi odwiedzający, nazywam się Arek.`;
 console.log(heading.classList.contains('main__heading--2'));
@@ -135,4 +136,7 @@ const hamburger = document.querySelector('.hamburger--js');
 hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js')
     nav.classList.toggle('navigation--open');
+    
+   
 })
+
